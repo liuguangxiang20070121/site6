@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solve Quadratic Equation</title>
+</head>
+<body>
+    <script>
+        // 输入 a, b, c
+        let a = parseFloat(prompt("Enter value of a:"));
+        let b = parseFloat(prompt("Enter value of b:"));
+        let c = parseFloat(prompt("Enter value of c:"));
+
+        // 计算 delta
+        let delta = b * b - 4 * a * c;
+
+        // 判断是否有实数根
+        if (delta < 0) {
+            alert("No real roots");
+            console.log("No real roots");
+        } else {
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+            alert("x1 = " + x1 + "\nx2 = " + x2);
+            console.log("x1 = " + x1);
+            console.log("x2 = " + x2);
+        }
+    </script>
+</body>
+</html>
